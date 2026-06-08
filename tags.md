@@ -40,6 +40,7 @@
 | `fine-tuning` | 微调、训练数据、模型定制 |
 | `training-data` | 训练数据、标注、清洗、覆盖范围 |
 | `rlhf` | 人类反馈强化学习 |
+| `reinforcement-learning` | 强化学习，基于奖励或反馈信号优化行为的机器学习方法 |
 | `rft` | 强化微调或基于评分器的强化训练 |
 | `alignment` | 模型对齐、人类偏好、安全偏好 |
 | `reward-model` | 奖励模型和偏好建模 |

@@ -60,7 +60,7 @@
       "section": "01-llm-use-training",
       "path": "../knowledge/01-大模型的使用与训练/05-RLHF人类反馈强化学习.md",
       "kind": "note",
-      "tags": ["rlhf", "rft", "alignment", "reward-model", "human-feedback", "beginner"]
+      "tags": ["rlhf", "reinforcement-learning", "rft", "alignment", "reward-model", "human-feedback", "beginner"]
     },
     {
       "id": "model-comparison",

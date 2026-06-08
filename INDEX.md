@@ -17,7 +17,7 @@
 | 02 | `knowledge/01-大模型的使用与训练/02-Prompt工程.md` | draft | deep | 面向初学者解释 prompt 的组成、写法、技巧、边界和练习 |
 | 03 | `knowledge/01-大模型的使用与训练/03-模型推理与部署.md` | draft | deep | 推理流程、部署方式、参数、优化和失败模式 |
 | 04 | `knowledge/01-大模型的使用与训练/04-SFT监督微调.md` | draft | deep | SFT 的定义、适用场景、数据、流程和风险 |
-| 05 | `knowledge/01-大模型的使用与训练/05-RLHF人类反馈强化学习.md` | draft | deep | RLHF 的动机、流程、奖励模型、RFT 关系和风险 |
+| 05 | `knowledge/01-大模型的使用与训练/05-RLHF人类反馈强化学习.md` | draft | deep | RLHF 英文拆解、强化学习基础、流程、奖励模型、RFT 关系和风险 |
 | 06 | `knowledge/01-大模型的使用与训练/06-常用大模型对比.md` | draft | deep | 常见模型家族、选型维度、适用场景和评估模板 |
 
 ## 02 Agent 基础与工具调用
