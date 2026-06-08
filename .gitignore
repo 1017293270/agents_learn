@@ -1,0 +1,23 @@
+# Local environment
+.env
+.env.*
+!.env.example
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+
+# Logs and caches
+*.log
+.cache/
+__pycache__/
+node_modules/
+
+# Build outputs
+dist/
+build/
+out/
+

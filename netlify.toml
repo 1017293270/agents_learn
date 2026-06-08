@@ -1,0 +1,9 @@
+[build]
+publish = "."
+command = ""
+
+[[redirects]]
+from = "/"
+to = "/viewer/"
+status = 302
+

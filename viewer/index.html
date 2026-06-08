@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agents 学习知识库</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="知识库导航">
+        <header class="brand">
+          <div>
+            <p class="eyebrow">Knowledge</p>
+            <h1>Agents 学习知识库</h1>
+          </div>
+          <span class="status-dot" aria-hidden="true"></span>
+        </header>
+
+        <label class="search-field">
+          <span>搜索</span>
+          <input id="searchInput" type="search" placeholder="主题、标签、内容" autocomplete="off" />
+        </label>
+
+        <section class="filter-block" aria-label="模块">
+          <div class="block-title">模块</div>
+          <div id="sectionList" class="section-list"></div>
+        </section>
+
+        <section class="filter-block" aria-label="标签">
+          <div class="block-title">标签</div>
+          <div id="tagList" class="tag-list"></div>
+        </section>
+      </aside>
+
+      <main class="workspace">
+        <section class="topbar" aria-label="知识库概览">
+          <div class="summary">
+            <span id="noteCount">0 篇</span>
+            <span id="sectionCount">0 模块</span>
+            <span id="currentFilter">全部</span>
+          </div>
+          <div class="view-actions" role="group" aria-label="状态筛选">
+            <button class="state-button is-active" data-status="all" type="button">全部</button>
+            <button class="state-button" data-status="verified" type="button">已验证</button>
+            <button class="state-button" data-status="draft" type="button">草稿</button>
+            <button class="state-button" data-status="unverified" type="button">待验证</button>
+          </div>
+        </section>
+
+        <section class="content-grid">
+          <div class="note-list-panel" aria-label="笔记列表">
+            <div id="noteList" class="note-list"></div>
+          </div>
+
+          <article class="reader" aria-live="polite">
+            <div id="readerEmpty" class="empty-state">
+              <h2>选择一篇笔记</h2>
+              <p>左侧筛选模块或标签，然后在列表中打开内容。</p>
+            </div>
+            <div id="readerLoading" class="loading-state" hidden>
+              <span class="loader" aria-hidden="true"></span>
+              <span>正在读取</span>
+            </div>
+            <div id="readerError" class="error-state" hidden>
+              <h2>读取失败</h2>
+              <p id="readerErrorText"></p>
+            </div>
+            <div id="readerContent" hidden>
+              <header class="reader-header">
+                <p id="readerSection" class="eyebrow"></p>
+                <h2 id="readerTitle"></h2>
+                <div id="readerMeta" class="meta-row"></div>
+              </header>
+              <div id="markdownBody" class="markdown-body"></div>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

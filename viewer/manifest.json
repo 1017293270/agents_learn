@@ -1,0 +1,90 @@
+{
+  "title": "Agents 学习知识库",
+  "updated": "2026-06-08",
+  "sections": [
+    {
+      "id": "01-llm-use-training",
+      "title": "01 大模型的使用与训练",
+      "folder": "knowledge/01-大模型的使用与训练"
+    },
+    {
+      "id": "02-agent-basics-tools",
+      "title": "02 Agent 基础与工具调用",
+      "folder": "knowledge/02-Agent基础与工具调用"
+    }
+  ],
+  "notes": [
+    {
+      "id": "01-llm-use-training-overview",
+      "title": "01 大模型的使用与训练",
+      "section": "01-llm-use-training",
+      "path": "../knowledge/01-大模型的使用与训练/README.md",
+      "kind": "section",
+      "tags": ["llm", "beginner"]
+    },
+    {
+      "id": "llm-basics",
+      "title": "01 大模型基础概念",
+      "section": "01-llm-use-training",
+      "path": "../knowledge/01-大模型的使用与训练/01-大模型基础概念.md",
+      "kind": "note",
+      "tags": ["llm", "model-types", "transformer", "tokenization", "beginner"]
+    },
+    {
+      "id": "prompt-engineering",
+      "title": "02 Prompt 工程",
+      "section": "01-llm-use-training",
+      "path": "../knowledge/01-大模型的使用与训练/02-Prompt工程.md",
+      "kind": "note",
+      "tags": ["prompt-engineering", "openai", "zero-shot", "few-shot", "evaluation", "prompt-injection", "beginner"]
+    },
+    {
+      "id": "model-inference-deployment",
+      "title": "03 模型推理与部署",
+      "section": "01-llm-use-training",
+      "path": "../knowledge/01-大模型的使用与训练/03-模型推理与部署.md",
+      "kind": "note",
+      "tags": ["inference", "deployment", "latency", "throughput", "serving", "beginner"]
+    },
+    {
+      "id": "sft",
+      "title": "04 SFT 监督微调",
+      "section": "01-llm-use-training",
+      "path": "../knowledge/01-大模型的使用与训练/04-SFT监督微调.md",
+      "kind": "note",
+      "tags": ["sft", "fine-tuning", "training-data", "evaluation", "beginner"]
+    },
+    {
+      "id": "rlhf",
+      "title": "05 RLHF 人类反馈强化学习",
+      "section": "01-llm-use-training",
+      "path": "../knowledge/01-大模型的使用与训练/05-RLHF人类反馈强化学习.md",
+      "kind": "note",
+      "tags": ["rlhf", "rft", "alignment", "reward-model", "human-feedback", "beginner"]
+    },
+    {
+      "id": "model-comparison",
+      "title": "06 常用大模型对比",
+      "section": "01-llm-use-training",
+      "path": "../knowledge/01-大模型的使用与训练/06-常用大模型对比.md",
+      "kind": "note",
+      "tags": ["model-comparison", "openai", "claude", "gemini", "mistral", "stale-info", "beginner"]
+    },
+    {
+      "id": "02-agent-basics-tools-overview",
+      "title": "02 Agent 基础与工具调用",
+      "section": "02-agent-basics-tools",
+      "path": "../knowledge/02-Agent基础与工具调用/README.md",
+      "kind": "section",
+      "tags": ["agent", "tool-calling"]
+    },
+    {
+      "id": "tool-calling",
+      "title": "01 Tool Calling",
+      "section": "02-agent-basics-tools",
+      "path": "../knowledge/02-Agent基础与工具调用/01-Tool-Calling.md",
+      "kind": "note",
+      "tags": ["agent", "tool-calling", "openai", "schema", "permissions", "streaming", "observability"]
+    }
+  ]
+}
