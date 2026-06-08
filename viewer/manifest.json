@@ -85,6 +85,38 @@
       "path": "../knowledge/02-Agent基础与工具调用/01-Tool-Calling.md",
       "kind": "note",
       "tags": ["agent", "tool-calling", "openai", "schema", "permissions", "streaming", "observability"]
+    },
+    {
+      "id": "agent-basics",
+      "title": "02 Agent 基础概念",
+      "section": "02-agent-basics-tools",
+      "path": "../knowledge/02-Agent基础与工具调用/02-Agent基础概念.md",
+      "kind": "note",
+      "tags": ["agent", "agent-architecture", "llm", "tool-calling", "planning", "memory", "beginner"]
+    },
+    {
+      "id": "tool-safety-permissions",
+      "title": "03 工具安全与权限",
+      "section": "02-agent-basics-tools",
+      "path": "../knowledge/02-Agent基础与工具调用/03-工具安全与权限.md",
+      "kind": "note",
+      "tags": ["agent", "tool-calling", "permissions", "guardrails", "safety", "tool-abuse", "data-leakage"]
+    },
+    {
+      "id": "mcp-remote-tools",
+      "title": "04 MCP 与远程工具",
+      "section": "02-agent-basics-tools",
+      "path": "../knowledge/02-Agent基础与工具调用/04-MCP与远程工具.md",
+      "kind": "note",
+      "tags": ["agent", "mcp", "tool-calling", "remote-tools", "json-rpc", "api-design", "permissions"]
+    },
+    {
+      "id": "agent-evaluation",
+      "title": "05 Agent 评估",
+      "section": "02-agent-basics-tools",
+      "path": "../knowledge/02-Agent基础与工具调用/05-Agent评估.md",
+      "kind": "note",
+      "tags": ["agent", "agent-evaluation", "evaluation", "trace", "testing", "observability", "beginner"]
     }
   ]
 }

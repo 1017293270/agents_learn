@@ -31,7 +31,7 @@
 | 模块 | 目录 | 用途 |
 | --- | --- | --- |
 | 01 | `knowledge/01-大模型的使用与训练/` | 大模型基础、Prompt、推理部署、SFT、RLHF、模型对比 |
-| 02 | `knowledge/02-Agent基础与工具调用/` | Agent 基础、tool calling、工具安全和执行 |
+| 02 | `knowledge/02-Agent基础与工具调用/` | Agent 基础、tool calling、工具安全、MCP、评估 |
 
 ## 模板选择
 
@@ -80,7 +80,7 @@
 - 总索引：`INDEX.md`
 - 标签体系：`tags.md`
 - 第一张知识笔记：`knowledge/01-大模型的使用与训练/02-Prompt工程.md`
-- Agent 工具调用笔记：`knowledge/02-Agent基础与工具调用/01-Tool-Calling.md`
+- Agent 工具调用模块：`knowledge/02-Agent基础与工具调用/`
 - 部署说明：`DEPLOY.md`
 
 ## 打开可视化界面

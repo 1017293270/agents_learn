@@ -39,6 +39,21 @@ Tool calling 是让模型提出“要调用什么工具、带什么参数”的�
 - 相邻概念：function calling、structured output、RAG、actions、MCP、agent tool router、workflow engine。
 - 前置知识：JSON Schema、API request/response、权限模型、错误处理、幂等性、日志与审计。
 
+## 缩写全称速查
+
+| 缩写 | 英文全称 | 中文解释 | 初学者理解 |
+| --- | --- | --- | --- |
+| API | Application Programming Interface | 应用程序编程接口 | 一个程序暴露给另一个程序调用的能力边界 |
+| JSON | JavaScript Object Notation | JavaScript 对象表示法 | 工具参数和返回结果常用的数据格式 |
+| ID | Identifier | 标识符 | 用来唯一标记一次工具调用、一个订单或一个文件 |
+| SDK | Software Development Kit | 软件开发工具包 | 封装 API、类型和示例，方便开发者调用模型或工具 |
+| RAG | Retrieval-Augmented Generation | 检索增强生成 | 先检索外部资料，再让模型基于资料生成回答 |
+| MCP | Model Context Protocol | 模型上下文协议 | 标准化 AI 应用连接外部工具、资源和提示模板的协议 |
+| UI | User Interface | 用户界面 | 展示工具执行状态、参数、结果和错误的界面 |
+| SQL | Structured Query Language | 结构化查询语言 | 数据库查询语言；如果工具会查数据库，必须防止注入和越权 |
+
+Function calling 不是缩写。它的直译是“函数调用”，在大模型语境中通常指模型生成一个函数名和结构化参数，应用侧再执行对应函数。
+
 ## 核心概念
 
 Tool calling 通常包含四类对象：
