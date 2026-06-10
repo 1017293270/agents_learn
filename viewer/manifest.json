@@ -1,6 +1,6 @@
 {
   "title": "Agents 学习知识库",
-  "updated": "2026-06-08",
+  "updated": "2026-06-10",
   "sections": [
     {
       "id": "01-llm-use-training",
@@ -11,6 +11,11 @@
       "id": "02-agent-basics-tools",
       "title": "02 Agent 基础与工具调用",
       "folder": "knowledge/02-Agent基础与工具调用"
+    },
+    {
+      "id": "03-rag-knowledge-retrieval",
+      "title": "03 RAG 与知识库检索",
+      "folder": "knowledge/03-RAG与知识库检索"
     }
   ],
   "notes": [
@@ -117,6 +122,62 @@
       "path": "../knowledge/02-Agent基础与工具调用/05-Agent评估.md",
       "kind": "note",
       "tags": ["agent", "agent-evaluation", "evaluation", "trace", "testing", "observability", "beginner"]
+    },
+    {
+      "id": "03-rag-knowledge-retrieval-overview",
+      "title": "03 RAG 与知识库检索",
+      "section": "03-rag-knowledge-retrieval",
+      "path": "../knowledge/03-RAG与知识库检索/README.md",
+      "kind": "section",
+      "tags": ["rag", "retrieval", "embedding", "beginner"]
+    },
+    {
+      "id": "rag-basics",
+      "title": "01 RAG 基础概念",
+      "section": "03-rag-knowledge-retrieval",
+      "path": "../knowledge/03-RAG与知识库检索/01-RAG基础概念.md",
+      "kind": "note",
+      "tags": ["rag", "retrieval", "grounding", "citation", "llm", "beginner"]
+    },
+    {
+      "id": "embedding-vector-semantic-search",
+      "title": "02 Embedding 向量与语义搜索",
+      "section": "03-rag-knowledge-retrieval",
+      "path": "../knowledge/03-RAG与知识库检索/02-Embedding向量与语义搜索.md",
+      "kind": "note",
+      "tags": ["embedding", "vector-search", "semantic-search", "retrieval", "rag", "beginner"]
+    },
+    {
+      "id": "document-chunking-indexing",
+      "title": "03 文档切分与索引",
+      "section": "03-rag-knowledge-retrieval",
+      "path": "../knowledge/03-RAG与知识库检索/03-文档切分与索引.md",
+      "kind": "note",
+      "tags": ["rag", "chunking", "indexing", "metadata", "reranking", "retrieval", "beginner"]
+    },
+    {
+      "id": "rag-qa-flow",
+      "title": "04 RAG 问答流程",
+      "section": "03-rag-knowledge-retrieval",
+      "path": "../knowledge/03-RAG与知识库检索/04-RAG问答流程.md",
+      "kind": "note",
+      "tags": ["rag", "question-answering", "retrieval", "reranking", "grounding", "citation", "beginner"]
+    },
+    {
+      "id": "rag-failure-modes",
+      "title": "05 RAG 失败模式",
+      "section": "03-rag-knowledge-retrieval",
+      "path": "../knowledge/03-RAG与知识库检索/05-RAG失败模式.md",
+      "kind": "note",
+      "tags": ["rag", "failure-modes", "hallucination", "retrieval", "evaluation", "grounding", "stale-info"]
+    },
+    {
+      "id": "rag-agent-relationship",
+      "title": "06 RAG 与 Agent 的关系",
+      "section": "03-rag-knowledge-retrieval",
+      "path": "../knowledge/03-RAG与知识库检索/06-RAG与Agent的关系.md",
+      "kind": "note",
+      "tags": ["rag", "agent", "tool-calling", "memory", "workflow", "agent-architecture", "beginner"]
     }
   ]
 }

@@ -8,6 +8,7 @@
 | --- | --- | --- | --- |
 | 01 | `knowledge/01-大模型的使用与训练/` | 大模型基础、Prompt、推理部署、SFT、RLHF、模型对比 | 已补充 6 个小节 |
 | 02 | `knowledge/02-Agent基础与工具调用/` | Agent 基础、tool calling、工具安全、MCP、评估 | 已补充 5 个小节 |
+| 03 | `knowledge/03-RAG与知识库检索/` | RAG、embedding、语义搜索、文档切分、索引、失败模式 | 已补充 6 个小节 |
 
 ## 01 大模型的使用与训练
 
@@ -30,6 +31,17 @@
 | 04 | `knowledge/02-Agent基础与工具调用/04-MCP与远程工具.md` | draft | deep | MCP 全称、host/client/server、远程工具、协议边界和风险 |
 | 05 | `knowledge/02-Agent基础与工具调用/05-Agent评估.md` | draft | deep | Eval、trace、grader、任务成功率、工具准确率和质量闭环 |
 
+## 03 RAG 与知识库检索
+
+| 小节 | 文件 | 状态 | 深度 | 备注 |
+| --- | --- | --- | --- | --- |
+| 01 | `knowledge/03-RAG与知识库检索/01-RAG基础概念.md` | draft | deep | RAG 全称、机制、适用边界、示例、失败模式和证据 |
+| 02 | `knowledge/03-RAG与知识库检索/02-Embedding向量与语义搜索.md` | draft | deep | Embedding、向量、语义搜索、BM25、ANN、top-k 和混合检索 |
+| 03 | `knowledge/03-RAG与知识库检索/03-文档切分与索引.md` | draft | deep | Chunk、metadata、index、overlap、reranking 和索引维护 |
+| 04 | `knowledge/03-RAG与知识库检索/04-RAG问答流程.md` | draft | deep | 问题理解、检索、重排、上下文组装、生成、引用和拒答 |
+| 05 | `knowledge/03-RAG与知识库检索/05-RAG失败模式.md` | draft | deep | 检索失败、上下文不足、忠实度失败、引用幻觉和权限风险 |
+| 06 | `knowledge/03-RAG与知识库检索/06-RAG与Agent的关系.md` | draft | deep | RAG、tool calling、memory、workflow、agent 的边界和组合方式 |
+
 ## 资料来源
 
 | 资料 | 文件 | 来源层级 | 备注 |
@@ -38,4 +50,5 @@
 | LLM 使用与训练参考资料 | `90-references/llm-use-training-references.md` | Tier 1 | 大模型基础、推理部署、SFT、RLHF、模型对比统一引用卡 |
 | OpenAI Function Calling Guide | `90-references/openai-function-calling.md` | Tier 1 | Tool calling 官方资料引用卡 |
 | Agent 基础与工具调用参考资料 | `90-references/agent-basics-tools-references.md` | Tier 1/2 | Agent、guardrails、MCP、eval 与 trace grading 统一引用卡 |
+| RAG 与知识库检索参考资料 | `90-references/rag-knowledge-retrieval-references.md` | Tier 1/2 | RAG、embedding、DPR、HyDE、RAGAS、file search 和 sufficient context |
 | OpenAI Design Guidelines | `90-references/openai-design-guidelines.md` | Tier 1 | UI 方向与品牌边界 |

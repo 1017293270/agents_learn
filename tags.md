@@ -22,7 +22,20 @@
 | `tool-calling` | 函数调用、工具调用、工具结果回传 |
 | `mcp` | Model Context Protocol，模型上下文协议 |
 | `rag` | 检索增强生成 |
+| `retrieval` | 信息检索、召回相关资料 |
+| `embedding` | 文本或对象的向量表示 |
+| `vector-search` | 向量搜索、相似度检索 |
+| `semantic-search` | 语义搜索，按含义而不是只按关键词检索 |
+| `grounding` | 让回答基于给定资料或证据 |
+| `citation` | 引用来源、出处和证据链 |
+| `chunking` | 文档切分，把资料拆成可检索片段 |
+| `indexing` | 建立索引，让资料可被快速检索 |
+| `metadata` | 关于文档或 chunk 的来源、标题、权限等结构化信息 |
+| `reranking` | 对初始检索结果进行重排 |
+| `failure-modes` | 系统失败路径、错误类型和诊断框架 |
+| `question-answering` | 问答任务，用户提问系统回答 |
 | `memory` | agent 记忆、上下文持久化、状态管理 |
+| `workflow` | 固定或半固定工作流、流程编排 |
 | `planning` | 规划、分解、执行策略 |
 | `evaluation` | eval、测试、基准和质量评估 |
 | `safety` | 安全、权限、注入、风险控制 |
