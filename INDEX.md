@@ -9,6 +9,7 @@
 | 01 | `knowledge/01-大模型的使用与训练/` | 大模型基础、Prompt、推理部署、SFT、RLHF、模型对比 | 已补充 6 个小节 |
 | 02 | `knowledge/02-Agent基础与工具调用/` | Agent 基础、tool calling、工具安全、MCP、评估 | 已补充 5 个小节 |
 | 03 | `knowledge/03-RAG与知识库检索/` | RAG、embedding、语义搜索、文档切分、索引、失败模式 | 已补充 6 个小节 |
+| 04 | `knowledge/04-Agent记忆与状态/` | memory、session、state、长期记忆、隐私、权限和评估 | 已补充 1 个小节 |
 
 ## 01 大模型的使用与训练
 
@@ -42,6 +43,12 @@
 | 05 | `knowledge/03-RAG与知识库检索/05-RAG失败模式.md` | draft | deep | 检索失败、上下文不足、忠实度失败、引用幻觉和权限风险 |
 | 06 | `knowledge/03-RAG与知识库检索/06-RAG与Agent的关系.md` | draft | deep | RAG、tool calling、memory、workflow、agent 的边界和组合方式 |
 
+## 04 Agent 记忆与状态
+
+| 小节 | 文件 | 状态 | 深度 | 备注 |
+| --- | --- | --- | --- | --- |
+| 01 | `knowledge/04-Agent记忆与状态/01-Memory基础概念.md` | draft | deep | context、session、state、memory、RAG 的边界，记忆治理和失败模式 |
+
 ## 资料来源
 
 | 资料 | 文件 | 来源层级 | 备注 |
@@ -52,3 +59,12 @@
 | Agent 基础与工具调用参考资料 | `90-references/agent-basics-tools-references.md` | Tier 1/2 | Agent、guardrails、MCP、eval 与 trace grading 统一引用卡 |
 | RAG 与知识库检索参考资料 | `90-references/rag-knowledge-retrieval-references.md` | Tier 1/2 | RAG、embedding、DPR、HyDE、RAGAS、file search 和 sufficient context |
 | OpenAI Design Guidelines | `90-references/openai-design-guidelines.md` | Tier 1 | UI 方向与品牌边界 |
+
+## 待整理主题
+
+| 主题 | 建议目录 | 说明 |
+| --- | --- | --- |
+| Agent 规划与工作流 | `knowledge/05-Agent规划与工作流/` | planning、workflow、ReAct、停止条件和任务编排 |
+| Agent 生产化与可观测性 | `knowledge/06-Agent生产化与可观测性/` | trace、日志、成本、延迟、超时、重试、回滚和事故复盘 |
+| Agent 安全与威胁建模 | `knowledge/07-Agent安全与威胁建模/` | prompt injection、工具威胁建模、权限隔离和高风险审批 |
+| Eval 实战 | `knowledge/08-Eval实战/` | golden set、trace eval、model grader 校准和 CI 回归测试 |
