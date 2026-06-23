@@ -1,6 +1,6 @@
 {
   "title": "Agents 学习知识库",
-  "updated": "2026-06-10",
+  "updated": "2026-06-23",
   "sections": [
     {
       "id": "01-llm-use-training",
@@ -16,6 +16,11 @@
       "id": "03-rag-knowledge-retrieval",
       "title": "03 RAG 与知识库检索",
       "folder": "knowledge/03-RAG与知识库检索"
+    },
+    {
+      "id": "04-agent-memory-state",
+      "title": "04 Agent 记忆与状态",
+      "folder": "knowledge/04-Agent记忆与状态"
     }
   ],
   "notes": [
@@ -178,6 +183,22 @@
       "path": "../knowledge/03-RAG与知识库检索/06-RAG与Agent的关系.md",
       "kind": "note",
       "tags": ["rag", "agent", "tool-calling", "memory", "workflow", "agent-architecture", "beginner"]
+    },
+    {
+      "id": "04-agent-memory-state-overview",
+      "title": "04 Agent 记忆与状态",
+      "section": "04-agent-memory-state",
+      "path": "../knowledge/04-Agent记忆与状态/README.md",
+      "kind": "section",
+      "tags": ["agent", "memory", "state-machine"]
+    },
+    {
+      "id": "agent-memory-basics",
+      "title": "01 Memory 基础概念",
+      "section": "04-agent-memory-state",
+      "path": "../knowledge/04-Agent记忆与状态/01-Memory基础概念.md",
+      "kind": "note",
+      "tags": ["agent", "memory", "state-machine", "permissions", "data-leakage", "evaluation", "beginner"]
     }
   ]
 }

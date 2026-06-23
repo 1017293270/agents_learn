@@ -33,6 +33,7 @@
 | 01 | `knowledge/01-大模型的使用与训练/` | 大模型基础、Prompt、推理部署、SFT、RLHF、模型对比 |
 | 02 | `knowledge/02-Agent基础与工具调用/` | Agent 基础、tool calling、工具安全、MCP、评估 |
 | 03 | `knowledge/03-RAG与知识库检索/` | RAG、embedding、语义搜索、文档切分、索引、失败模式 |
+| 04 | `knowledge/04-Agent记忆与状态/` | memory、session、state、长期记忆、权限、隐私和记忆评估 |
 
 ## 模板选择
 
@@ -80,9 +81,11 @@
 - 可视化浏览页：`viewer/index.html`
 - 总索引：`INDEX.md`
 - 标签体系：`tags.md`
-- 第一张知识笔记：`knowledge/01-大模型的使用与训练/02-Prompt工程.md`
+- 第一章入口：`knowledge/01-大模型的使用与训练/README.md`
+- 第一张概念笔记：`knowledge/01-大模型的使用与训练/01-大模型基础概念.md`
 - Agent 工具调用模块：`knowledge/02-Agent基础与工具调用/`
 - RAG 与知识库检索模块：`knowledge/03-RAG与知识库检索/`
+- Agent 记忆与状态模块：`knowledge/04-Agent记忆与状态/`
 - 部署说明：`DEPLOY.md`
 
 ## 打开可视化界面

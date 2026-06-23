@@ -16,6 +16,7 @@
 | --- | --- |
 | `agent` | AI agent 的定义、结构和能力边界 |
 | `llm` | 大语言模型基础概念、使用和训练 |
+| `model-types` | 模型类型、模型分类、能力边界和模型用途定位 |
 | `transformer` | Transformer 架构、attention、现代 LLM 基础 |
 | `tokenization` | token、分词、上下文窗口相关知识 |
 | `agent-architecture` | agent 架构、控制流、组件关系 |
