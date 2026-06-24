@@ -65,6 +65,43 @@
 | `claude` | Anthropic Claude 模型相关内容 |
 | `gemini` | Google Gemini 模型相关内容 |
 | `mistral` | Mistral 模型相关内容 |
+| `neural-network` | 神经网络基础、层、参数、训练机制 |
+| `deep-learning` | 深度学习模型和训练方法 |
+| `parameters` | 模型参数、权重、偏置、可学习变量 |
+| `activation-function` | 激活函数、非线性变换 |
+| `feature-engineering` | 特征工程、特征构造和输入处理 |
+| `factor` | 因子、影响预测目标的输入因素 |
+| `feature-representation` | 特征表示、数值化、embedding、归一化 |
+| `normalization` | 特征归一化、标准化、分布稳定 |
+| `feature-interaction` | 特征交互、因子组合、特征交叉 |
+| `factorization-machine` | Factorization Machine，因子分解机 |
+| `deepfm` | DeepFM，结合 FM 和深度网络的特征交互模型 |
+| `recommendation` | 推荐系统、CTR/CVR、排序相关模型 |
+| `forward-pass` | 前向传播，从输入到输出预测的计算 |
+| `loss-function` | 损失函数、训练错误度量 |
+| `objective` | 优化目标，loss 与正则项组合 |
+| `logits` | softmax 或 sigmoid 前的模型原始分数 |
+| `backpropagation` | 反向传播，按链式法则计算梯度 |
+| `gradient` | 梯度，loss 对参数的变化率 |
+| `autograd` | 自动微分、框架自动计算梯度 |
+| `chain-rule` | 链式法则，反向传播的数学基础 |
+| `automatic-differentiation` | 自动微分系统 |
+| `optimizer` | 优化器、参数更新算法 |
+| `gradient-descent` | 梯度下降 |
+| `sgd` | Stochastic Gradient Descent，随机梯度下降 |
+| `momentum` | 动量优化 |
+| `mini-batch` | 小批量训练 |
+| `adam` | Adaptive Moment Estimation，自适应矩估计优化器 |
+| `adamw` | Adam with Decoupled Weight Decay |
+| `rmsprop` | Root Mean Square Propagation 优化器 |
+| `adagrad` | Adaptive Gradient Algorithm 优化器 |
+| `lion` | Lion 优化器 |
+| `learning-rate` | 学习率、参数更新步长 |
+| `scheduler` | 学习率调度器 |
+| `warmup` | 训练初期学习率预热 |
+| `weight-decay` | 权重衰减、正则化 |
+| `gradient-clipping` | 梯度裁剪 |
+| `training-stability` | 训练稳定性、NaN、发散、震荡 |
 
 ## 工程标签
 
@@ -80,6 +117,17 @@
 | `permissions` | 权限边界、确认、访问控制 |
 | `streaming` | 流式输出、渐进式事件、取消控制 |
 | `testing` | 单元测试、集成测试、E2E、实验复现 |
+| `training-loop` | 训练循环，取数据、前向、反向、更新和验证 |
+| `dataloader` | 数据加载器、batch 生成和并行加载 |
+| `batch` | 批量样本，一次训练 step 的数据 |
+| `epoch` | 训练集完整遍历一次 |
+| `gpu` | GPU 训练、显存、硬件加速 |
+| `amp` | Automatic Mixed Precision，自动混合精度 |
+| `checkpoint` | 训练检查点、模型和优化器状态保存 |
+| `training-diagnostics` | 训练诊断、调参排查 |
+| `overfitting` | 过拟合 |
+| `underfitting` | 欠拟合 |
+| `hyperparameter-tuning` | 超参数调优 |
 
 ## 证据标签
 

@@ -9,6 +9,7 @@
 | 01 | `knowledge/01-大模型的使用与训练/` | 大模型基础、Prompt、推理部署、SFT、RLHF、模型对比 | 已补充 6 个小节 |
 | 02 | `knowledge/02-Agent基础与工具调用/` | Agent 基础、tool calling、工具安全、MCP、评估 | 已补充 5 个小节 |
 | 03 | `knowledge/03-RAG与知识库检索/` | RAG、embedding、语义搜索、文档切分、索引、失败模式 | 已补充 6 个小节 |
+| 04 | `knowledge/04-神经网络训练与优化/` | 神经网络基础、因子组合、损失、梯度、优化器、训练执行 | 已补充 10 个小节 |
 
 ## 01 大模型的使用与训练
 
@@ -42,6 +43,21 @@
 | 05 | `knowledge/03-RAG与知识库检索/05-RAG失败模式.md` | draft | deep | 检索失败、上下文不足、忠实度失败、引用幻觉和权限风险 |
 | 06 | `knowledge/03-RAG与知识库检索/06-RAG与Agent的关系.md` | draft | deep | RAG、tool calling、memory、workflow、agent 的边界和组合方式 |
 
+## 04 神经网络训练与优化
+
+| 小节 | 文件 | 状态 | 深度 | 备注 |
+| --- | --- | --- | --- | --- |
+| 01 | `knowledge/04-神经网络训练与优化/01-神经网络基础概念.md` | draft | deep | 神经元、层、参数、权重、偏置、激活函数和模型容量 |
+| 02 | `knowledge/04-神经网络训练与优化/02-因子与特征表示.md` | draft | deep | 因子、特征、连续/离散特征、embedding、归一化和数据泄露 |
+| 03 | `knowledge/04-神经网络训练与优化/03-因子组合与特征交互.md` | draft | deep | 线性组合、特征交叉、FM、DeepFM、attention 和交互建模 |
+| 04 | `knowledge/04-神经网络训练与优化/04-前向传播与损失函数.md` | draft | deep | forward pass、logits、activation、loss、objective 和常见损失 |
+| 05 | `knowledge/04-神经网络训练与优化/05-反向传播与梯度.md` | draft | deep | backpropagation、chain rule、gradient、autograd 和梯度问题 |
+| 06 | `knowledge/04-神经网络训练与优化/06-优化器基础.md` | draft | deep | GD、SGD、mini-batch SGD、momentum 和更新规则 |
+| 07 | `knowledge/04-神经网络训练与优化/07-常用优化器对比.md` | draft | deep | Adagrad、RMSProp、Adam、AdamW、Lion 的差异和选择 |
+| 08 | `knowledge/04-神经网络训练与优化/08-学习率与训练稳定性.md` | draft | deep | learning rate、scheduler、warmup、weight decay、gradient clipping |
+| 09 | `knowledge/04-神经网络训练与优化/09-执行算法与训练流程.md` | draft | deep | dataloader、batch、epoch、计算图、GPU、AMP、checkpoint |
+| 10 | `knowledge/04-神经网络训练与优化/10-失败模式与调参判断.md` | draft | deep | loss 不降、过拟合、欠拟合、梯度爆炸/消失和调参排查顺序 |
+
 ## 资料来源
 
 | 资料 | 文件 | 来源层级 | 备注 |
@@ -51,4 +67,5 @@
 | OpenAI Function Calling Guide | `90-references/openai-function-calling.md` | Tier 1 | Tool calling 官方资料引用卡 |
 | Agent 基础与工具调用参考资料 | `90-references/agent-basics-tools-references.md` | Tier 1/2 | Agent、guardrails、MCP、eval 与 trace grading 统一引用卡 |
 | RAG 与知识库检索参考资料 | `90-references/rag-knowledge-retrieval-references.md` | Tier 1/2 | RAG、embedding、DPR、HyDE、RAGAS、file search 和 sufficient context |
+| 神经网络训练与优化参考资料 | `90-references/neural-network-training-optimization-references.md` | Tier 1 | Deep Learning Book、PyTorch、Adam、AdamW、FM、DeepFM |
 | OpenAI Design Guidelines | `90-references/openai-design-guidelines.md` | Tier 1 | UI 方向与品牌边界 |

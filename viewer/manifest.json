@@ -1,6 +1,6 @@
 {
   "title": "Agents 学习知识库",
-  "updated": "2026-06-10",
+  "updated": "2026-06-24",
   "sections": [
     {
       "id": "01-llm-use-training",
@@ -16,6 +16,11 @@
       "id": "03-rag-knowledge-retrieval",
       "title": "03 RAG 与知识库检索",
       "folder": "knowledge/03-RAG与知识库检索"
+    },
+    {
+      "id": "04-neural-network-training-optimization",
+      "title": "04 神经网络训练与优化",
+      "folder": "knowledge/04-神经网络训练与优化"
     }
   ],
   "notes": [
@@ -178,6 +183,94 @@
       "path": "../knowledge/03-RAG与知识库检索/06-RAG与Agent的关系.md",
       "kind": "note",
       "tags": ["rag", "agent", "tool-calling", "memory", "workflow", "agent-architecture", "beginner"]
+    },
+    {
+      "id": "04-neural-network-training-optimization-overview",
+      "title": "04 神经网络训练与优化",
+      "section": "04-neural-network-training-optimization",
+      "path": "../knowledge/04-神经网络训练与优化/README.md",
+      "kind": "section",
+      "tags": ["neural-network", "optimization", "beginner"]
+    },
+    {
+      "id": "neural-network-basics",
+      "title": "01 神经网络基础概念",
+      "section": "04-neural-network-training-optimization",
+      "path": "../knowledge/04-神经网络训练与优化/01-神经网络基础概念.md",
+      "kind": "note",
+      "tags": ["neural-network", "deep-learning", "parameters", "activation-function", "beginner"]
+    },
+    {
+      "id": "factor-feature-representation",
+      "title": "02 因子与特征表示",
+      "section": "04-neural-network-training-optimization",
+      "path": "../knowledge/04-神经网络训练与优化/02-因子与特征表示.md",
+      "kind": "note",
+      "tags": ["feature-engineering", "factor", "feature-representation", "embedding", "normalization", "beginner"]
+    },
+    {
+      "id": "factor-combination-feature-interaction",
+      "title": "03 因子组合与特征交互",
+      "section": "04-neural-network-training-optimization",
+      "path": "../knowledge/04-神经网络训练与优化/03-因子组合与特征交互.md",
+      "kind": "note",
+      "tags": ["feature-interaction", "factor", "factorization-machine", "deepfm", "attention", "recommendation"]
+    },
+    {
+      "id": "forward-pass-loss-functions",
+      "title": "04 前向传播与损失函数",
+      "section": "04-neural-network-training-optimization",
+      "path": "../knowledge/04-神经网络训练与优化/04-前向传播与损失函数.md",
+      "kind": "note",
+      "tags": ["forward-pass", "loss-function", "objective", "logits", "activation-function", "beginner"]
+    },
+    {
+      "id": "backpropagation-gradients",
+      "title": "05 反向传播与梯度",
+      "section": "04-neural-network-training-optimization",
+      "path": "../knowledge/04-神经网络训练与优化/05-反向传播与梯度.md",
+      "kind": "note",
+      "tags": ["backpropagation", "gradient", "autograd", "chain-rule", "automatic-differentiation", "beginner"]
+    },
+    {
+      "id": "optimizer-basics",
+      "title": "06 优化器基础",
+      "section": "04-neural-network-training-optimization",
+      "path": "../knowledge/04-神经网络训练与优化/06-优化器基础.md",
+      "kind": "note",
+      "tags": ["optimizer", "gradient-descent", "sgd", "momentum", "mini-batch", "beginner"]
+    },
+    {
+      "id": "common-optimizers-comparison",
+      "title": "07 常用优化器对比",
+      "section": "04-neural-network-training-optimization",
+      "path": "../knowledge/04-神经网络训练与优化/07-常用优化器对比.md",
+      "kind": "note",
+      "tags": ["optimizer", "adam", "adamw", "sgd", "rmsprop", "adagrad", "lion"]
+    },
+    {
+      "id": "learning-rate-training-stability",
+      "title": "08 学习率与训练稳定性",
+      "section": "04-neural-network-training-optimization",
+      "path": "../knowledge/04-神经网络训练与优化/08-学习率与训练稳定性.md",
+      "kind": "note",
+      "tags": ["learning-rate", "scheduler", "warmup", "weight-decay", "gradient-clipping", "training-stability"]
+    },
+    {
+      "id": "execution-algorithms-training-flow",
+      "title": "09 执行算法与训练流程",
+      "section": "04-neural-network-training-optimization",
+      "path": "../knowledge/04-神经网络训练与优化/09-执行算法与训练流程.md",
+      "kind": "note",
+      "tags": ["training-loop", "dataloader", "batch", "epoch", "gpu", "amp", "checkpoint"]
+    },
+    {
+      "id": "training-failure-modes-tuning",
+      "title": "10 失败模式与调参判断",
+      "section": "04-neural-network-training-optimization",
+      "path": "../knowledge/04-神经网络训练与优化/10-失败模式与调参判断.md",
+      "kind": "note",
+      "tags": ["training-diagnostics", "failure-modes", "overfitting", "underfitting", "gradient", "hyperparameter-tuning"]
     }
   ]
 }
