@@ -25,6 +25,34 @@ source:
     type: official-doc
     url: "https://docs.pytorch.org/docs/stable/amp.html"
     accessed: "2026-06-24"
+  - title: "Linear - PyTorch"
+    type: official-doc
+    url: "https://docs.pytorch.org/docs/stable/generated/torch.nn.Linear.html"
+    accessed: "2026-06-25"
+  - title: "Broadcasting semantics - PyTorch"
+    type: official-doc
+    url: "https://docs.pytorch.org/docs/stable/notes/broadcasting.html"
+    accessed: "2026-06-25"
+  - title: "CrossEntropyLoss - PyTorch"
+    type: official-doc
+    url: "https://docs.pytorch.org/docs/stable/generated/torch.nn.CrossEntropyLoss.html"
+    accessed: "2026-06-25"
+  - title: "BCEWithLogitsLoss - PyTorch"
+    type: official-doc
+    url: "https://docs.pytorch.org/docs/stable/generated/torch.nn.BCEWithLogitsLoss.html"
+    accessed: "2026-06-25"
+  - title: "Zeroing out gradients in PyTorch"
+    type: official-doc
+    url: "https://docs.pytorch.org/tutorials/recipes/recipes/zeroing_out_gradients.html"
+    accessed: "2026-06-25"
+  - title: "Reproducibility - PyTorch"
+    type: official-doc
+    url: "https://docs.pytorch.org/docs/stable/notes/randomness.html"
+    accessed: "2026-06-25"
+  - title: "Saving and Loading Models - PyTorch"
+    type: official-doc
+    url: "https://docs.pytorch.org/tutorials/beginner/saving_loading_models.html"
+    accessed: "2026-06-25"
   - title: "Adam: A Method for Stochastic Optimization"
     type: paper
     url: "https://arxiv.org/abs/1412.6980"
@@ -42,15 +70,15 @@ source:
     url: "https://arxiv.org/abs/1703.04247"
     accessed: "2026-06-24"
 created: "2026-06-24"
-updated: "2026-06-24"
-tags: ["neural-network", "optimization", "optimizer", "feature-engineering", "gradient", "official-doc", "paper", "source-review"]
+updated: "2026-06-25"
+tags: ["neural-network", "optimization", "optimizer", "feature-engineering", "gradient", "tensor", "shape", "pytorch", "reproducibility", "official-doc", "paper", "source-review"]
 ---
 
 # 神经网络训练与优化参考资料
 
 ## 来源信息
 
-- 标题：Deep Learning；PyTorch autograd/optim/data/AMP 文档；Adam；AdamW；Factorization Machines；DeepFM
+- 标题：Deep Learning；PyTorch autograd/optim/data/AMP/Linear/loss/reproducibility/saving-loading 文档；Adam；AdamW；Factorization Machines；DeepFM
 - 作者或机构：Ian Goodfellow、Yoshua Bengio、Aaron Courville；PyTorch；Kingma and Ba；Loshchilov and Hutter；Rendle；Guo 等
 - 类型：教材、官方文档、论文
 - 访问日期：2026-06-24
@@ -82,10 +110,15 @@ tags: ["neural-network", "optimization", "optimizer", "feature-engineering", "gr
 
 - PyTorch autograd 支持对计算图自动计算梯度。
 - PyTorch `torch.optim` 提供 SGD、Adam、AdamW 等优化算法。
+- PyTorch `torch.nn.Linear` 规定输入最后一维对应 `in_features`，输出最后一维对应 `out_features`。
+- PyTorch `CrossEntropyLoss` 可用于多分类 logits 与 target 的交叉熵损失。
+- PyTorch `BCEWithLogitsLoss` 将 sigmoid 和 binary cross entropy 合在一起，数值上比手动 sigmoid 后接 BCELoss 更稳定。
 - Adam 是基于梯度一阶矩和二阶矩自适应估计的随机优化算法。
 - AdamW 的关键思想是 decoupled weight decay，即将权重衰减从 loss gradient 更新中解耦。
 - FM 通过因子分解参数建模特征交互，适合高稀疏场景。
 - DeepFM 结合 factorization machine 和 deep neural network 来同时建模低阶和高阶特征交互。
+- PyTorch reproducibility 文档提示跨版本、平台和 CPU/GPU 之间不能保证完全可复现。
+- PyTorch saving/loading 文档说明模型和 optimizer 都有 `state_dict`，可用于保存和恢复状态。
 
 ## 关键主张表
 
@@ -97,6 +130,8 @@ tags: ["neural-network", "optimization", "optimizer", "feature-engineering", "gr
 | Adam 使用一阶/二阶矩自适应估计 | Adam 论文 | 高 | 泛化表现和最优选择依赖任务 | `07-常用优化器对比.md` |
 | AdamW 解耦 weight decay | AdamW 论文 | 高 | 仍需调 learning rate 与 weight decay | `08-学习率与训练稳定性.md` |
 | DataLoader、AMP、checkpoint 影响执行稳定性 | PyTorch data/AMP docs | 高 | 具体性能和显存效果依赖硬件 | `09-执行算法与训练流程.md` |
+| Tensor shape 是训练代码的关键约束 | PyTorch Linear、CrossEntropyLoss、broadcasting docs | 高 | 不同层和 loss 有不同约定 | `11-张量矩阵形状与计算图.md` |
+| 最小训练循环和实验记录有助于复现与诊断 | PyTorch zeroing gradients、reproducibility、saving/loading docs | 高 | 完全复现仍受平台和版本限制 | `12-最小PyTorch训练实验与可复现性.md` |
 
 ## 机制解释
 
@@ -144,7 +179,9 @@ tags: ["neural-network", "optimization", "optimizer", "feature-engineering", "gr
 - 因子组合是否要进一步拆成推荐系统专章。
 - Optimizer 是否需要单独扩展到大模型训练中的 AdamW、Adafactor、8-bit optimizer、ZeRO。
 - 执行算法是否要加入分布式训练、数据并行和模型并行。
+- 是否需要把 tensor shape、loss 输入约定和常见 PyTorch 报错整理成一张速查表。
 
 ## 变更记录
 
 - 2026-06-24：创建第四章统一引用卡。
+- 2026-06-25：补充 PyTorch Linear、broadcasting、loss、zero gradients、reproducibility、saving/loading 来源，用于支撑新增第 11、12 小节。

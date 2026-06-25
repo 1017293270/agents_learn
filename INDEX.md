@@ -9,7 +9,7 @@
 | 01 | `knowledge/01-大模型的使用与训练/` | 大模型基础、Prompt、推理部署、SFT、RLHF、模型对比 | 已补充 6 个小节 |
 | 02 | `knowledge/02-Agent基础与工具调用/` | Agent 基础、tool calling、工具安全、MCP、评估 | 已补充 5 个小节 |
 | 03 | `knowledge/03-RAG与知识库检索/` | RAG、embedding、语义搜索、文档切分、索引、失败模式 | 已补充 6 个小节 |
-| 04 | `knowledge/04-神经网络训练与优化/` | 神经网络基础、因子组合、损失、梯度、优化器、训练执行 | 已补充 10 个小节 |
+| 04 | `knowledge/04-神经网络训练与优化/` | 神经网络基础、因子组合、损失、梯度、优化器、训练执行 | 已补充 12 个小节 |
 | 05 | `knowledge/05-机器学习基础模型与特征建模/` | 机器学习流程、线性/树/集成模型、指标、验证、解释 | 已补充 10 个小节 |
 
 ## 01 大模型的使用与训练
@@ -58,6 +58,8 @@
 | 08 | `knowledge/04-神经网络训练与优化/08-学习率与训练稳定性.md` | draft | deep | learning rate、scheduler、warmup、weight decay、gradient clipping |
 | 09 | `knowledge/04-神经网络训练与优化/09-执行算法与训练流程.md` | draft | deep | dataloader、batch、epoch、计算图、GPU、AMP、checkpoint |
 | 10 | `knowledge/04-神经网络训练与优化/10-失败模式与调参判断.md` | draft | deep | loss 不降、过拟合、欠拟合、梯度爆炸/消失和调参排查顺序 |
+| 11 | `knowledge/04-神经网络训练与优化/11-张量矩阵形状与计算图.md` | draft | deep | tensor、matrix、shape、batch、broadcasting、logits/target 形状和计算图 |
+| 12 | `knowledge/04-神经网络训练与优化/12-最小PyTorch训练实验与可复现性.md` | draft | deep | 最小训练循环、小 batch 过拟合、随机种子、实验记录、checkpoint |
 
 ## 05 机器学习基础模型与特征建模
 

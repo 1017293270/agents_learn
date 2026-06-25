@@ -86,6 +86,7 @@
 | `autograd` | 自动微分、框架自动计算梯度 |
 | `chain-rule` | 链式法则，反向传播的数学基础 |
 | `automatic-differentiation` | 自动微分系统 |
+| `optimization` | 优化、训练目标最小化和参数更新总体主题 |
 | `optimizer` | 优化器、参数更新算法 |
 | `gradient-descent` | 梯度下降 |
 | `sgd` | Stochastic Gradient Descent，随机梯度下降 |
@@ -102,6 +103,12 @@
 | `weight-decay` | 权重衰减、正则化 |
 | `gradient-clipping` | 梯度裁剪 |
 | `training-stability` | 训练稳定性、NaN、发散、震荡 |
+| `tensor` | 张量，神经网络中的多维数值数组 |
+| `matrix` | 矩阵，二维数值数组和线性层计算基础 |
+| `shape` | 张量形状、batch 维度、输入输出维度 |
+| `broadcasting` | 广播语义，张量形状自动扩展规则 |
+| `pytorch` | PyTorch 框架、训练循环和 API 行为 |
+| `reproducibility` | 可复现性、随机种子、确定性和实验记录 |
 | `machine-learning` | 机器学习基础模型、训练、评估和应用 |
 | `feature-modeling` | 特征建模，把因子或变量组织成模型输入 |
 | `linear-model` | 线性模型、线性回归和逻辑回归 |

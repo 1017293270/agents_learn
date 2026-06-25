@@ -278,6 +278,22 @@
       "tags": ["training-diagnostics", "failure-modes", "overfitting", "underfitting", "gradient", "hyperparameter-tuning"]
     },
     {
+      "id": "tensor-matrix-shape-computation-graph",
+      "title": "11 张量、矩阵形状与计算图",
+      "section": "04-neural-network-training-optimization",
+      "path": "../knowledge/04-神经网络训练与优化/11-张量矩阵形状与计算图.md",
+      "kind": "note",
+      "tags": ["tensor", "matrix", "shape", "broadcasting", "forward-pass", "beginner"]
+    },
+    {
+      "id": "minimal-pytorch-training-reproducibility",
+      "title": "12 最小 PyTorch 训练实验与可复现性",
+      "section": "04-neural-network-training-optimization",
+      "path": "../knowledge/04-神经网络训练与优化/12-最小PyTorch训练实验与可复现性.md",
+      "kind": "note",
+      "tags": ["pytorch", "training-loop", "reproducibility", "experiment", "checkpoint", "beginner"]
+    },
+    {
       "id": "05-machine-learning-models-feature-modeling-overview",
       "title": "05 机器学习基础模型与特征建模",
       "section": "05-machine-learning-models-feature-modeling",
