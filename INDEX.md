@@ -10,6 +10,7 @@
 | 02 | `knowledge/02-Agent基础与工具调用/` | Agent 基础、tool calling、工具安全、MCP、评估 | 已补充 5 个小节 |
 | 03 | `knowledge/03-RAG与知识库检索/` | RAG、embedding、语义搜索、文档切分、索引、失败模式 | 已补充 6 个小节 |
 | 04 | `knowledge/04-神经网络训练与优化/` | 神经网络基础、因子组合、损失、梯度、优化器、训练执行 | 已补充 10 个小节 |
+| 05 | `knowledge/05-机器学习基础模型与特征建模/` | 机器学习流程、线性/树/集成模型、指标、验证、解释 | 已补充 10 个小节 |
 
 ## 01 大模型的使用与训练
 
@@ -58,6 +59,21 @@
 | 09 | `knowledge/04-神经网络训练与优化/09-执行算法与训练流程.md` | draft | deep | dataloader、batch、epoch、计算图、GPU、AMP、checkpoint |
 | 10 | `knowledge/04-神经网络训练与优化/10-失败模式与调参判断.md` | draft | deep | loss 不降、过拟合、欠拟合、梯度爆炸/消失和调参排查顺序 |
 
+## 05 机器学习基础模型与特征建模
+
+| 小节 | 文件 | 状态 | 深度 | 备注 |
+| --- | --- | --- | --- | --- |
+| 01 | `knowledge/05-机器学习基础模型与特征建模/01-机器学习建模流程.md` | draft | deep | 从问题定义、数据、特征、模型、验证到上线监控的完整流程 |
+| 02 | `knowledge/05-机器学习基础模型与特征建模/02-线性回归与逻辑回归.md` | draft | deep | 线性回归、逻辑回归、系数、正则化、概率和基线建模 |
+| 03 | `knowledge/05-机器学习基础模型与特征建模/03-决策树与随机森林.md` | draft | deep | 决策树分裂、过拟合、bagging、随机森林和特征重要性 |
+| 04 | `knowledge/05-机器学习基础模型与特征建模/04-GBDT-XGBoost-LightGBM-CatBoost.md` | draft | deep | 梯度提升树、XGBoost、LightGBM、CatBoost 的机制、差异和适用边界 |
+| 05 | `knowledge/05-机器学习基础模型与特征建模/05-分类回归排序任务与指标.md` | draft | deep | 分类、回归、排序任务和 Accuracy、AUC、F1、RMSE、NDCG 等指标 |
+| 06 | `knowledge/05-机器学习基础模型与特征建模/06-特征工程与数据预处理.md` | draft | deep | 缺失值、异常值、编码、缩放、pipeline、泄露和金融因子预处理 |
+| 07 | `knowledge/05-机器学习基础模型与特征建模/07-交叉验证与时间序列验证.md` | draft | deep | KFold、StratifiedKFold、TimeSeriesSplit、walk-forward、purging 和 embargo |
+| 08 | `knowledge/05-机器学习基础模型与特征建模/08-过拟合正则化与模型选择.md` | draft | deep | bias-variance、正则化、早停、超参数搜索、nested CV 和模型选择 |
+| 09 | `knowledge/05-机器学习基础模型与特征建模/09-模型解释与特征重要性.md` | draft | deep | 系数、树重要性、permutation importance、PDP、ICE、SHAP 和解释风险 |
+| 10 | `knowledge/05-机器学习基础模型与特征建模/10-从传统机器学习到神经网络和金融因子.md` | draft | deep | 传统 ML、神经网络、金融因子建模、模型选择和学习路线 |
+
 ## 资料来源
 
 | 资料 | 文件 | 来源层级 | 备注 |
@@ -68,4 +84,5 @@
 | Agent 基础与工具调用参考资料 | `90-references/agent-basics-tools-references.md` | Tier 1/2 | Agent、guardrails、MCP、eval 与 trace grading 统一引用卡 |
 | RAG 与知识库检索参考资料 | `90-references/rag-knowledge-retrieval-references.md` | Tier 1/2 | RAG、embedding、DPR、HyDE、RAGAS、file search 和 sufficient context |
 | 神经网络训练与优化参考资料 | `90-references/neural-network-training-optimization-references.md` | Tier 1 | Deep Learning Book、PyTorch、Adam、AdamW、FM、DeepFM |
+| 机器学习基础模型与特征建模参考资料 | `90-references/machine-learning-models-feature-modeling-references.md` | Tier 1/2 | scikit-learn、XGBoost、LightGBM、CatBoost、Random Forest、GBDT |
 | OpenAI Design Guidelines | `90-references/openai-design-guidelines.md` | Tier 1 | UI 方向与品牌边界 |

@@ -1,6 +1,6 @@
 {
   "title": "Agents 学习知识库",
-  "updated": "2026-06-24",
+  "updated": "2026-06-25",
   "sections": [
     {
       "id": "01-llm-use-training",
@@ -21,6 +21,11 @@
       "id": "04-neural-network-training-optimization",
       "title": "04 神经网络训练与优化",
       "folder": "knowledge/04-神经网络训练与优化"
+    },
+    {
+      "id": "05-machine-learning-models-feature-modeling",
+      "title": "05 机器学习基础模型与特征建模",
+      "folder": "knowledge/05-机器学习基础模型与特征建模"
     }
   ],
   "notes": [
@@ -271,6 +276,94 @@
       "path": "../knowledge/04-神经网络训练与优化/10-失败模式与调参判断.md",
       "kind": "note",
       "tags": ["training-diagnostics", "failure-modes", "overfitting", "underfitting", "gradient", "hyperparameter-tuning"]
+    },
+    {
+      "id": "05-machine-learning-models-feature-modeling-overview",
+      "title": "05 机器学习基础模型与特征建模",
+      "section": "05-machine-learning-models-feature-modeling",
+      "path": "../knowledge/05-机器学习基础模型与特征建模/README.md",
+      "kind": "section",
+      "tags": ["machine-learning", "feature-modeling", "beginner"]
+    },
+    {
+      "id": "ml-modeling-workflow",
+      "title": "01 机器学习建模流程",
+      "section": "05-machine-learning-models-feature-modeling",
+      "path": "../knowledge/05-机器学习基础模型与特征建模/01-机器学习建模流程.md",
+      "kind": "note",
+      "tags": ["machine-learning", "model-selection", "feature-engineering", "cross-validation", "evaluation", "beginner"]
+    },
+    {
+      "id": "linear-logistic-regression",
+      "title": "02 线性回归与逻辑回归",
+      "section": "05-machine-learning-models-feature-modeling",
+      "path": "../knowledge/05-机器学习基础模型与特征建模/02-线性回归与逻辑回归.md",
+      "kind": "note",
+      "tags": ["linear-model", "regression", "classification", "regularization", "feature-modeling", "beginner"]
+    },
+    {
+      "id": "decision-tree-random-forest",
+      "title": "03 决策树与随机森林",
+      "section": "05-machine-learning-models-feature-modeling",
+      "path": "../knowledge/05-机器学习基础模型与特征建模/03-决策树与随机森林.md",
+      "kind": "note",
+      "tags": ["tree-model", "random-forest", "ensemble-learning", "feature-importance", "overfitting", "beginner"]
+    },
+    {
+      "id": "gbdt-xgboost-lightgbm-catboost",
+      "title": "04 GBDT、XGBoost、LightGBM、CatBoost",
+      "section": "05-machine-learning-models-feature-modeling",
+      "path": "../knowledge/05-机器学习基础模型与特征建模/04-GBDT-XGBoost-LightGBM-CatBoost.md",
+      "kind": "note",
+      "tags": ["gbdt", "xgboost", "lightgbm", "catboost", "ensemble-learning", "tree-model"]
+    },
+    {
+      "id": "classification-regression-ranking-metrics",
+      "title": "05 分类、回归、排序任务与指标",
+      "section": "05-machine-learning-models-feature-modeling",
+      "path": "../knowledge/05-机器学习基础模型与特征建模/05-分类回归排序任务与指标.md",
+      "kind": "note",
+      "tags": ["classification", "regression", "ranking", "metrics", "evaluation", "beginner"]
+    },
+    {
+      "id": "feature-engineering-preprocessing",
+      "title": "06 特征工程与数据预处理",
+      "section": "05-machine-learning-models-feature-modeling",
+      "path": "../knowledge/05-机器学习基础模型与特征建模/06-特征工程与数据预处理.md",
+      "kind": "note",
+      "tags": ["feature-engineering", "preprocessing", "normalization", "data-leakage", "financial-factors", "beginner"]
+    },
+    {
+      "id": "cross-validation-time-series-validation",
+      "title": "07 交叉验证与时间序列验证",
+      "section": "05-machine-learning-models-feature-modeling",
+      "path": "../knowledge/05-机器学习基础模型与特征建模/07-交叉验证与时间序列验证.md",
+      "kind": "note",
+      "tags": ["cross-validation", "time-series-validation", "model-selection", "data-leakage", "financial-factors", "beginner"]
+    },
+    {
+      "id": "overfitting-regularization-model-selection",
+      "title": "08 过拟合、正则化与模型选择",
+      "section": "05-machine-learning-models-feature-modeling",
+      "path": "../knowledge/05-机器学习基础模型与特征建模/08-过拟合正则化与模型选择.md",
+      "kind": "note",
+      "tags": ["overfitting", "regularization", "model-selection", "bias-variance", "hyperparameter-tuning", "beginner"]
+    },
+    {
+      "id": "model-interpretability-feature-importance",
+      "title": "09 模型解释与特征重要性",
+      "section": "05-machine-learning-models-feature-modeling",
+      "path": "../knowledge/05-机器学习基础模型与特征建模/09-模型解释与特征重要性.md",
+      "kind": "note",
+      "tags": ["model-interpretability", "feature-importance", "permutation-importance", "shap", "financial-factors", "beginner"]
+    },
+    {
+      "id": "traditional-ml-neural-net-financial-factors",
+      "title": "10 从传统机器学习到神经网络和金融因子",
+      "section": "05-machine-learning-models-feature-modeling",
+      "path": "../knowledge/05-机器学习基础模型与特征建模/10-从传统机器学习到神经网络和金融因子.md",
+      "kind": "note",
+      "tags": ["machine-learning", "neural-network", "financial-factors", "model-selection", "feature-modeling", "beginner"]
     }
   ]
 }

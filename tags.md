@@ -102,6 +102,31 @@
 | `weight-decay` | 权重衰减、正则化 |
 | `gradient-clipping` | 梯度裁剪 |
 | `training-stability` | 训练稳定性、NaN、发散、震荡 |
+| `machine-learning` | 机器学习基础模型、训练、评估和应用 |
+| `feature-modeling` | 特征建模，把因子或变量组织成模型输入 |
+| `linear-model` | 线性模型、线性回归和逻辑回归 |
+| `tree-model` | 决策树、树模型和分裂规则 |
+| `ensemble-learning` | 集成学习、bagging、boosting、随机森林和 GBDT |
+| `random-forest` | Random Forest，随机森林 |
+| `gbdt` | Gradient Boosting Decision Tree，梯度提升决策树 |
+| `xgboost` | XGBoost，eXtreme Gradient Boosting |
+| `lightgbm` | LightGBM，Light Gradient Boosting Machine |
+| `catboost` | CatBoost，Categorical Boosting |
+| `classification` | 分类任务，预测离散类别 |
+| `regression` | 回归任务，预测连续数值 |
+| `ranking` | 排序任务，预测样本相对顺序 |
+| `metrics` | 模型评估指标 |
+| `cross-validation` | 交叉验证，用多次训练/验证估计泛化能力 |
+| `time-series-validation` | 时间序列验证，按时间顺序模拟未来预测 |
+| `regularization` | 正则化，约束模型复杂度以降低过拟合 |
+| `model-selection` | 模型选择、超参数选择和验证策略 |
+| `bias-variance` | 偏差-方差权衡 |
+| `model-interpretability` | 模型解释、预测原因和解释边界 |
+| `feature-importance` | 特征重要性，模型对特征的依赖程度 |
+| `permutation-importance` | 置换重要性，打乱特征后观察指标下降 |
+| `shap` | SHAP，SHapley Additive exPlanations |
+| `preprocessing` | 数据预处理、缺失值、编码、缩放和转换 |
+| `financial-factors` | 金融因子、因子分析和因子建模 |
 
 ## 工程标签
 
