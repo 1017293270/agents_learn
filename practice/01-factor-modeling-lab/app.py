@@ -186,6 +186,29 @@ def plot_feature_importance(importances: pd.DataFrame, model_name: str):
     return fig
 
 
+def build_prediction_detail(predictions: pd.DataFrame, model_name: str) -> pd.DataFrame:
+    detail = predictions[["date", "asset_id", "actual", model_name]].copy()
+    detail = detail.rename(
+        columns={
+            "date": "日期",
+            "asset_id": "资产",
+            "actual": "真实未来收益",
+            model_name: "模型预测收益",
+        }
+    )
+    detail["预测误差"] = detail["模型预测收益"] - detail["真实未来收益"]
+    detail["绝对误差"] = detail["预测误差"].abs()
+    detail["真实方向"] = np.where(detail["真实未来收益"] >= 0, "上涨", "下跌")
+    detail["预测方向"] = np.where(detail["模型预测收益"] >= 0, "上涨", "下跌")
+    detail["方向判断正确"] = np.where(detail["真实方向"] == detail["预测方向"], "是", "否")
+    detail["预测分位"] = detail["模型预测收益"].rank(pct=True)
+    detail["日期"] = detail["日期"].dt.strftime("%Y-%m-%d")
+
+    numeric_columns = ["真实未来收益", "模型预测收益", "预测误差", "绝对误差", "预测分位"]
+    detail[numeric_columns] = detail[numeric_columns].round(6)
+    return detail
+
+
 def run_experiment(
     n_days: int,
     n_assets: int,
@@ -214,6 +237,7 @@ def run_experiment(
     return (
         df.head(20),
         metrics,
+        build_prediction_detail(predictions, selected_model),
         importances,
         plot_predictions(predictions, selected_model),
         plot_feature_importance(importances, selected_model),
@@ -252,6 +276,7 @@ def build_demo() -> gr.Blocks:
             prediction_plot = gr.Plot(label="预测 vs 真实")
             importance_plot = gr.Plot(label="特征重要性")
 
+        prediction_detail = gr.Dataframe(label="预测明细（测试集）", interactive=False)
         importance_table = gr.Dataframe(label="特征重要性明细", interactive=False)
 
         inputs = [
@@ -264,7 +289,14 @@ def build_demo() -> gr.Blocks:
             seed,
             selected_model,
         ]
-        outputs = [data_preview, metrics_table, importance_table, prediction_plot, importance_plot]
+        outputs = [
+            data_preview,
+            metrics_table,
+            prediction_detail,
+            importance_table,
+            prediction_plot,
+            importance_plot,
+        ]
 
         # Gradio 4.42 can hit a FastAPI/Pydantic compatibility issue on
         # /queue/join in some local environments, so this small CPU-bound lab
