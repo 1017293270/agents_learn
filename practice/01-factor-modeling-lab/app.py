@@ -84,6 +84,7 @@ def rmse(y_true: pd.Series, y_pred: np.ndarray) -> float:
 def evaluate_predictions(name: str, y_true: pd.Series, y_pred: np.ndarray) -> dict:
     result = pd.DataFrame({"y_true": y_true.to_numpy(), "y_pred": y_pred})
     result["pred_rank"] = result["y_pred"].rank(pct=True)
+    result["direction_correct"] = (result["y_true"] >= 0) == (result["y_pred"] >= 0)
 
     top = result[result["pred_rank"] >= 0.8]["y_true"].mean()
     bottom = result[result["pred_rank"] <= 0.2]["y_true"].mean()
@@ -94,6 +95,7 @@ def evaluate_predictions(name: str, y_true: pd.Series, y_pred: np.ndarray) -> di
         "mae": mean_absolute_error(result["y_true"], result["y_pred"]),
         "r2": r2_score(result["y_true"], result["y_pred"]),
         "spearman_ic": result["y_true"].corr(result["y_pred"], method="spearman"),
+        "direction_accuracy": result["direction_correct"].mean(),
         "top_20pct_avg_return": top,
         "bottom_20pct_avg_return": bottom,
         "top_minus_bottom": top - bottom,
@@ -209,6 +211,35 @@ def build_prediction_detail(predictions: pd.DataFrame, model_name: str) -> pd.Da
     return detail
 
 
+def build_error_detail(predictions: pd.DataFrame, model_name: str) -> pd.DataFrame:
+    detail = build_prediction_detail(predictions, model_name)
+    return detail.sort_values("绝对误差", ascending=False).head(20).reset_index(drop=True)
+
+
+def build_quantile_summary(predictions: pd.DataFrame, model_name: str) -> pd.DataFrame:
+    summary = predictions[["actual", model_name]].copy()
+    summary = summary.rename(columns={"actual": "真实未来收益", model_name: "模型预测收益"})
+    summary["预测分位"] = summary["模型预测收益"].rank(pct=True, method="first")
+    summary["预测组"] = pd.qcut(summary["预测分位"], q=5, labels=False, duplicates="drop") + 1
+    summary["方向判断正确"] = (summary["真实未来收益"] >= 0) == (summary["模型预测收益"] >= 0)
+
+    grouped = (
+        summary.groupby("预测组", observed=True)
+        .agg(
+            样本数=("真实未来收益", "size"),
+            平均预测收益=("模型预测收益", "mean"),
+            平均真实收益=("真实未来收益", "mean"),
+            方向准确率=("方向判断正确", "mean"),
+        )
+        .reset_index()
+    )
+    grouped["预测组"] = grouped["预测组"].astype(int).map(lambda value: f"第{value}组")
+    grouped[["平均预测收益", "平均真实收益", "方向准确率"]] = grouped[
+        ["平均预测收益", "平均真实收益", "方向准确率"]
+    ].round(6)
+    return grouped
+
+
 def run_experiment(
     n_days: int,
     n_assets: int,
@@ -238,6 +269,8 @@ def run_experiment(
         df.head(20),
         metrics,
         build_prediction_detail(predictions, selected_model),
+        build_error_detail(predictions, selected_model),
+        build_quantile_summary(predictions, selected_model),
         importances,
         plot_predictions(predictions, selected_model),
         plot_feature_importance(importances, selected_model),
@@ -277,6 +310,8 @@ def build_demo() -> gr.Blocks:
             importance_plot = gr.Plot(label="特征重要性")
 
         prediction_detail = gr.Dataframe(label="预测明细（测试集）", interactive=False)
+        error_detail = gr.Dataframe(label="误差最大样本（测试集）", interactive=False)
+        quantile_summary = gr.Dataframe(label="预测分组收益（测试集）", interactive=False)
         importance_table = gr.Dataframe(label="特征重要性明细", interactive=False)
 
         inputs = [
@@ -293,6 +328,8 @@ def build_demo() -> gr.Blocks:
             data_preview,
             metrics_table,
             prediction_detail,
+            error_detail,
+            quantile_summary,
             importance_table,
             prediction_plot,
             importance_plot,
