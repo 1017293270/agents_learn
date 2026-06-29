@@ -2,6 +2,13 @@
 
 这是 agents 学习知识库的主题入口。新增知识点后，优先更新本索引、`tags.md` 和 `viewer/manifest.json`。
 
+## 实战入口
+
+| 目录 | 用途 | 当前内容 |
+| --- | --- | --- |
+| `practice/` | 可运行的学习实验和复盘记录 | 已创建第一个最小因子建模实验 |
+| `practice/01-factor-modeling-lab/` | Python + pandas + scikit-learn 建模闭环 | 生成模拟因子、训练线性/随机森林/GBDT 基线、输出指标和特征重要性 |
+
 ## 模块索引
 
 | 模块 | 目录 | 主题范围 | 当前状态 |

@@ -21,3 +21,8 @@ dist/
 build/
 out/
 
+# Practice generated artifacts
+practice/**/data/*.csv
+practice/**/results/*.csv
+practice/**/results/*.json
+practice/**/results/*.png
