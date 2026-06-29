@@ -44,6 +44,12 @@ python .\src\01_generate_synthetic_factors.py
 python .\src\02_train_baseline_models.py
 ```
 
+打开可视化界面：
+
+```powershell
+python .\app.py
+```
+
 跑完后，把观察写到：
 
 ```text

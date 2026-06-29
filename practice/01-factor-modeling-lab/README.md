@@ -67,6 +67,18 @@ python .\src\01_generate_synthetic_factors.py
 python .\src\02_train_baseline_models.py
 ```
 
+打开可视化界面：
+
+```powershell
+python .\app.py
+```
+
+默认访问：
+
+```text
+http://127.0.0.1:7860
+```
+
 ## 你要观察什么
 
 第一次跑时，不要急着调参，先观察：
