@@ -263,8 +263,11 @@ def build_demo() -> gr.Blocks:
         ]
         outputs = [data_preview, metrics_table, importance_table, prediction_plot, importance_plot]
 
-        run_btn.click(fn=run_experiment, inputs=inputs, outputs=outputs)
-        demo.load(fn=run_experiment, inputs=inputs, outputs=outputs)
+        # Gradio 4.42 can hit a FastAPI/Pydantic compatibility issue on
+        # /queue/join in some local environments, so this small CPU-bound lab
+        # uses direct callbacks instead of queueing.
+        run_btn.click(fn=run_experiment, inputs=inputs, outputs=outputs, queue=False)
+        demo.load(fn=run_experiment, inputs=inputs, outputs=outputs, queue=False)
 
     return demo
 
